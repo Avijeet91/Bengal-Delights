@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: url("Menu_back.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+}
+/*Navbar Section*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#navbar::before{
+    content:"";
+    background-color: white;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    text-decoration: none;
+    padding:3px 22px;
+    border-radius:22px;
+    display: block;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/*Home Section*/
+#home{
+    display:flex;
+    flex-direction: column;
+    height: 250px;
+
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background-color: bisque;
+    height:90%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity:0.7;
+}
+/*Table Section*/
+table{
+    font-family: 'Baloo Bhai',cursive;
+    border-collapse: collapse;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    background-color: white;
+}
+td,th{
+    border:1px solid brown;
+    text-align: center;
+    padding: 8px;
+    color: black;
+}
+tr:nth-child(even)
+{
+    background-color: rgb(226, 138, 30);
+}
+/*Utility Classes*/
+.h-primary{
+    font-size:3.5rem;
+    padding:13px;
+    color:white;
+    text-align:center;
+}
+.h-secondary{
+    font-size:2.5rem;
+    padding:13px;
+    color:white;
+    text-align:center;
+}

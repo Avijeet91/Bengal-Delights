@@ -1,0 +1,17 @@
+
+
+#navbar{
+flex-direction: column;
+}
+#navbar ul li a{
+font-size: 0.7rem;
+}
+.h-primary{
+font-size:2.5rem;
+}
+.h-secondary{
+font-size: 1.5rem;
+}
+table{
+width:70%
+}
